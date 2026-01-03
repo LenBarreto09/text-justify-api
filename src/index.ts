@@ -85,6 +85,10 @@ fastify.post('/api/justify', {
   }
 });
 
+fastify.get('/', async (request, reply) => {
+  return { message: 'Text Justify API is running. Use /api/token and /api/justify' };
+});
+
 const start = async () => {
   try {
     const port = parseInt(process.env.PORT || '3000');
