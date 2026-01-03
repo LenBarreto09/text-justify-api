@@ -1,6 +1,6 @@
 import Fastify from "fastify";
-import { createToken, verifyToken, incrementWordCount } from "./auth.js";
-import { justify } from "./justify.js";
+import { createToken, verifyToken, incrementWordCount } from "./auth/auth.js";
+import { justify } from "./justify/justify.js";
 
 const fastify = Fastify({
   logger: true

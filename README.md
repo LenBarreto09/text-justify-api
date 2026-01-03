@@ -6,15 +6,30 @@ Implement and deploy a REST API that justifies a text passed as a parameter.
 - Node.js
 - TypeScript
 - Fastify
+- Jest
 
 ## Getting Started
 
 To start the server, run:
 ```bash
-ts-node src/index.ts
+npx tsx src/index.ts
 ```
 
 The server uses the `start` function to initialize and listen on port 3000.
+
+## Testing
+
+This project uses Jest as the testing framework with TypeScript.
+
+### Test Scripts
+
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage report
+npm run test:coverage
+```
 
 ## Implementation Notes
 

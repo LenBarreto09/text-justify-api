@@ -6,6 +6,11 @@ dist/
 build/
 *.tsbuildinfo
 
+# Compiled JS files in src (should use dist/ instead)
+src/*.js
+src/*.d.ts
+src/*.map
+
 # Environment variables
 .env
 .env.local
