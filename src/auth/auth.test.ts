@@ -1,6 +1,11 @@
-import { createToken, verifyToken, incrementWordCount } from './auth.js';
+import { createToken, verifyToken, incrementWordCount, clearAllTokens } from './auth.js';
 
 describe('Auth Module', () => {
+  beforeEach(() => {
+    // Clear all tokens before each test to ensure isolation
+    clearAllTokens();
+  });
+
   describe('createToken', () => {
     it('should create a token for a new email', () => {
       const email = 'user1@test.com';

@@ -42,4 +42,10 @@ const incrementWordCount = (token: string, words: number) => {
   return true;
 }
 
-export { createToken, verifyToken, incrementWordCount };
+// Test helper function to clear all tokens (only for testing)
+const clearAllTokens = () => {
+  tokens.clear();
+  tokensByEmail.clear();
+}
+
+export { createToken, verifyToken, incrementWordCount, clearAllTokens };
